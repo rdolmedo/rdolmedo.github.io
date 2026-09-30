@@ -20,7 +20,7 @@ links:
     url: mailto:rdo@tue.mpg.de
 ---
 
-I am a PhD student at the Max Planck Institute for Intelligent Systems, Tübingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schölkopf](https://is.mpg.de/~bs).
+I am a final-year PhD student at the Max Planck Institute for Intelligent Systems, Tübingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schölkopf](https://is.mpg.de/~bs).
 
 My research focuses on LLM benchmarking & specialization.
 

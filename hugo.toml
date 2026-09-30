@@ -7,7 +7,7 @@ enableRobotsTXT = true
 [params]
   # Bolded in publication author lists.
   authorNames = ["Ricardo Dominguez-Olmedo", "Ricardo Olmedo"]
-  description = "Ricardo Olmedo (also published as Ricardo Dominguez-Olmedo): PhD student at the Max Planck Institute for Intelligent Systems, working on LLM benchmarking & specialization."
+  description = "Ricardo Olmedo: final-year PhD student at the Max Planck Institute for Intelligent Systems, working on LLM benchmarking & specialization."
 
 [outputs]
   home = ["html"]
