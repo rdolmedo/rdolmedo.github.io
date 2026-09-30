@@ -2,7 +2,7 @@
 <header class="intro">
   <div class="intro-top">
     {{- with .Params.photo }}{{ with resources.Get . }}
-    {{- $img := .Fill "192x192 Smart jpg q85" }}
+    {{- $img := .Fill "128x128 Center jpg q90" }}
     <img class="avatar" src="{{ $img.RelPermalink }}" width="64" height="64" alt="Photo of {{ site.Title }}">
     {{- end }}{{ end }}
     <div>
