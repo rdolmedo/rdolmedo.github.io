@@ -76,6 +76,8 @@ a code { color: inherit; }
 /* ---------- home ---------- */
 
 .intro { margin-bottom: 2rem; }
+.intro h1 { margin-bottom: 0; }
+.aka { margin: 0.1rem 0 0.75rem; font-size: 0.85rem; color: var(--muted); }
 
 .links {
   display: flex;

@@ -1,6 +1,9 @@
 {{ define "main" }}
 <header class="intro">
   <h1>{{ site.Title }}</h1>
+  {{- with .Params.aka }}
+  <p class="aka">{{ . }}</p>
+  {{- end }}
   {{- with .Params.links }}
   <nav class="links">
     {{- range . }}
