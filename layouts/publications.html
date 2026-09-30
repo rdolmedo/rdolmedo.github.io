@@ -1,0 +1,20 @@
+{{ define "main" }}
+<nav class="crumb"><a href="{{ site.Home.RelPermalink }}">← {{ site.Title }}</a></nav>
+<h1>{{ .Title }}</h1>
+<div class="prose muted">{{ .Content }}</div>
+
+{{- $pubs := hugo.Data.publications }}
+{{- $years := slice }}
+{{- range $pubs }}{{ $years = $years | append .year }}{{ end }}
+{{- range sort ($years | uniq) "value" "desc" }}
+{{- $year := . }}
+<section class="pub-year">
+  <h2>{{ $year }}</h2>
+  <ul class="pubs">
+    {{- range where $pubs "year" $year }}
+    {{ partial "pub.html" (dict "pub" . "authors" true) }}
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{ end }}

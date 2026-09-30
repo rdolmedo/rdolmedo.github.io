@@ -11,7 +11,8 @@ hugo server -D     # also show drafts
 
 ## Where things are
 
-- Homepage (bio, links, selected works): `content/_index.md`
+- Homepage bio and links: `content/_index.md`
+- Publications (full list at /publications/; `selected: true` puts one on the homepage): `data/publications.yaml`
 - Blog posts: `content/blogs/*.md`. Start a new one with `hugo new content blogs/my-post.md` (it begins as a draft; delete `draft: true` to publish).
 - Standalone HTML pages (served as-is): `static/`
 - Styles: `assets/css/main.css`. Templates: `layouts/`

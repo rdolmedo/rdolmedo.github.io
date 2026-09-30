@@ -1,0 +1,11 @@
+{{- /* One publication. Context: dict "pub" (entry from data/publications.yaml) "authors" (bool). */ -}}
+{{- $p := .pub -}}
+<li class="pub">
+  <a href="{{ $p.url }}">{{ $p.title }}</a>
+  {{- if and .authors $p.authors }}
+  {{- $a := $p.authors | htmlEscape }}
+  {{- range site.Params.authorNames }}{{ $a = replace $a . (printf "<strong>%s</strong>" .) }}{{ end }}
+  <span class="authors">{{ $a | safeHTML }}</span>
+  {{- end }}
+  <span class="venue">{{ $p.venue }}{{ with $p.award }}<span class="badge">{{ . }}</span>{{ end }}</span>
+</li>

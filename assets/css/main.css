@@ -83,7 +83,7 @@ a code { color: inherit; }
 }
 
 .kind-home h2,
-.kind-home .prose h2 {
+.pub-year h2 {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -92,16 +92,44 @@ a code { color: inherit; }
   margin: 3rem 0 1rem;
 }
 
-/* Selected works: "- [Title](url) *Venue*" */
-.kind-home .prose ul { list-style: none; padding: 0; margin: 0; }
-.kind-home .prose li { margin: 0 0 0.9rem; line-height: 1.45; }
-.kind-home .prose li em {
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+}
+.section-head h2 { margin: 0; }
+.section-head a { font-size: 0.88rem; white-space: nowrap; }
+
+/* Publications, from data/publications.yaml */
+.pubs { list-style: none; padding: 0; margin: 0; }
+.pub { margin: 0 0 1rem; line-height: 1.45; }
+.pub .authors,
+.pub .venue {
   display: block;
-  font-style: normal;
   font-size: 0.9rem;
   color: var(--muted);
-  margin-top: 0.1rem;
+  margin-top: 0.15rem;
 }
+.pub .authors strong { color: var(--fg); font-weight: 600; white-space: nowrap; }
+
+.badge {
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0 0.45em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 999px;
+  vertical-align: 0.1em;
+}
+
+.muted { color: var(--muted); }
 
 .posts { list-style: none; padding: 0; margin: 0; }
 .posts li {
@@ -117,6 +145,8 @@ a code { color: inherit; }
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
+
+.ext { font-size: 0.8em; margin-left: 0.2em; color: var(--muted); }
 
 /* ---------- posts ---------- */
 

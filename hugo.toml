@@ -5,7 +5,9 @@ disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 
 [params]
-  description = "PhD student at the Max Planck Institute for Intelligent Systems, working on language models and benchmarking."
+  # Bolded in publication author lists.
+  authorNames = ["Ricardo Dominguez-Olmedo", "Ricardo Olmedo"]
+  description = "PhD student at the Max Planck Institute for Intelligent Systems, working on LLM benchmarking & specialization."
 
 [outputs]
   home = ["html"]

@@ -1,0 +1,23 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.Title }}</title>
+    <link>{{ site.Home.Permalink }}</link>
+    <description>{{ site.Params.description }}</description>
+    {{- with .OutputFormats.Get "rss" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{- end }}
+    {{- range .Pages.ByDate.Reverse }}
+    {{- $link := or .Params.externalURL .Permalink }}
+    <item>
+      <title>{{ .Title | markdownify | plainify }}</title>
+      <link>{{ $link }}</link>
+      <guid>{{ $link }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with or .Description .Params.lede }}
+      <description>{{ . | markdownify | plainify }}</description>
+      {{- end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>

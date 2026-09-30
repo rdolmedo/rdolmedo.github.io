@@ -1,8 +1,13 @@
 <ul class="posts">
   {{- range . }}
+  {{- $title := .RenderString .LinkTitle }}
   <li>
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
-    <a href="{{ .RelPermalink }}">{{ .RenderString .LinkTitle }}</a>
+    {{- with .Params.externalURL }}
+    <a href="{{ . }}">{{ $title }}<span class="ext" aria-hidden="true">↗</span></a>
+    {{- else }}
+    <a href="{{ .RelPermalink }}">{{ $title }}</a>
+    {{- end }}
   </li>
   {{- end }}
 </ul>

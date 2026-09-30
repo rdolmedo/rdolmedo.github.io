@@ -14,6 +14,20 @@
   {{ .Content }}
 </div>
 
+<section>
+  <div class="section-head">
+    <h2>Selected works</h2>
+    {{- with site.GetPage "/publications" }}
+    <a href="{{ .RelPermalink }}">All publications →</a>
+    {{- end }}
+  </div>
+  <ul class="pubs">
+    {{- range where hugo.Data.publications "selected" true }}
+    {{ partial "pub.html" (dict "pub" . "authors" false) }}
+    {{- end }}
+  </ul>
+</section>
+
 {{ with site.GetPage "/blogs" }}
 <section>
   <h2>{{ .Title }}</h2>

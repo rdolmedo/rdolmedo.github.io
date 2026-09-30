@@ -9,14 +9,8 @@ links:
     url: mailto:rdo@tue.mpg.de
 ---
 
-I am a PhD student at the Max Planck Institute for Intelligent Systems, Tuebingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schoelkopf](https://is.mpg.de/~bs).
+I am a PhD student at the Max Planck Institute for Intelligent Systems, Tübingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schoelkopf](https://is.mpg.de/~bs). My PhD is supported by a Google PhD Fellowship (2025–2027).
 
-My research focuses broadly on language models & benchmarking.
+My research focuses broadly on LLM benchmarking & specialization.
 
-I am currently visiting Stanford University, and have received the 2025/2027 Google PhD Fellowship.
-
-## Selected works
-
-- [Computational Arbitrage in AI Model Markets](https://arxiv.org/abs/2603.22404) *ICML 2026*
-- [Training on the Test Task Confounds Evaluation and Emergence](https://arxiv.org/abs/2407.07890) *ICLR 2025 (Oral)*
-- [Lawma: The Power of Specialization for Legal Annotation](https://arxiv.org/abs/2407.16615) *ICLR 2025 + CS&Law'25*
+During spring/summer 2026, I visited [Sanmi Koyejo](https://stairlab.stanford.edu/) at Stanford University.

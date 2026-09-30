@@ -1,0 +1,64 @@
+# Newest first. Shown on /publications/ grouped by `year`.
+# `selected: true` also lists the paper on the homepage.
+# `award` (e.g. Oral, Spotlight) is shown as a badge after the venue.
+# Your name is bolded automatically (see `authorNames` in hugo.toml).
+
+- title: "nanoswe: Speedrunning SWE-bench"
+  authors: Ricardo Olmedo, Moritz Hardt, Bernhard Schölkopf, Sanmi Koyejo
+  venue: In submission
+  year: 2026
+  url: https://www.nanoswe.com/blog.html
+  selected: true
+
+- title: Computational Arbitrage in AI Model Markets
+  authors: Ricardo Olmedo, Bernhard Schölkopf, Moritz Hardt
+  venue: ICML 2026
+  year: 2026
+  url: https://arxiv.org/abs/2603.22404
+
+- title: Train-before-test harmonizes language model rankings
+  authors: Guanhua Zhang, Ricardo Dominguez-Olmedo, Moritz Hardt
+  venue: ICLR 2026
+  award: Oral
+  year: 2026
+  url: https://arxiv.org/abs/2507.05195
+
+- title: "MATH-Beyond: A Benchmark for RL to Expand Beyond the Base Model"
+  authors: Prasanna Mayilvahanan, Ricardo Dominguez-Olmedo, Thaddäus Wiedemer, Wieland Brendel
+  venue: ICLR 2026
+  year: 2026
+  url: https://arxiv.org/abs/2510.11653
+
+- title: Training on the Test Task Confounds Evaluation and Emergence
+  authors: Ricardo Dominguez-Olmedo, Florian E. Dorner, Moritz Hardt
+  venue: ICLR 2025
+  award: Oral
+  year: 2025
+  url: https://arxiv.org/abs/2407.07890
+  selected: true
+
+- title: "Lawma: The Power of Specialization for Legal Annotation"
+  authors: Ricardo Dominguez-Olmedo, Vedant Nanda, Rediet Abebe, Stefan Bechtold, Christoph Engel, Jens Frankenreiter, Krishna Gummadi, Moritz Hardt, Michael Livermore
+  venue: ICLR 2025 + CS&Law'25
+  year: 2025
+  url: https://arxiv.org/abs/2407.16615
+  selected: true
+
+- title: Questioning the Survey Responses of Large Language Models
+  authors: Ricardo Dominguez-Olmedo, Moritz Hardt, Celestine Mendler-Dünner
+  venue: NeurIPS 2024
+  award: Oral
+  year: 2024
+  url: https://arxiv.org/abs/2306.07951
+
+- title: On Data Manifolds Entailed by Structural Causal Models
+  authors: Ricardo Dominguez-Olmedo, Amir-Hossein Karimi, Georgios Arvanitidis, Bernhard Schölkopf
+  venue: ICML 2023
+  year: 2023
+  url: https://proceedings.mlr.press/v202/dominguez-olmedo23a.html
+
+- title: On the Adversarial Robustness of Causal Algorithmic Recourse
+  authors: Ricardo Dominguez-Olmedo, Amir-Hossein Karimi, Bernhard Schölkopf
+  venue: ICML 2022
+  year: 2022
+  url: https://arxiv.org/abs/2112.11313
