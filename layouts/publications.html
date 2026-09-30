@@ -3,18 +3,9 @@
 <h1>{{ .Title }}</h1>
 <div class="prose muted">{{ .Content }}</div>
 
-{{- $pubs := hugo.Data.publications }}
-{{- $years := slice }}
-{{- range $pubs }}{{ $years = $years | append .year }}{{ end }}
-{{- range sort ($years | uniq) "value" "desc" }}
-{{- $year := . }}
-<section class="pub-year">
-  <h2>{{ $year }}</h2>
-  <ul class="pubs">
-    {{- range where $pubs "year" $year }}
-    {{ partial "pub.html" (dict "pub" . "authors" true) }}
-    {{- end }}
-  </ul>
-</section>
-{{- end }}
+<ul class="pubs pub-list">
+  {{- range hugo.Data.publications }}
+  {{ partial "pub.html" (dict "pub" . "authors" true) }}
+  {{- end }}
+</ul>
 {{ end }}

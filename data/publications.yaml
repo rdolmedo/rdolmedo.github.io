@@ -1,4 +1,4 @@
-# Newest first. Shown on /publications/ grouped by `year`.
+# Newest first; /publications/ lists them in this order.
 # `selected: true` also lists the paper on the homepage.
 # `award` (e.g. Oral, Spotlight) is shown as a badge after the venue.
 # Your name is bolded automatically (see `authorNames` in hugo.toml).
