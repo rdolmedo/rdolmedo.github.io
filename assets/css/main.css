@@ -184,8 +184,8 @@ a code { color: inherit; }
 
 .talk-title,
 .talk-host { display: block; }
-.talk-title { font-size: 0.93rem; line-height: 1.4; }
-.talk-host { font-size: 0.83rem; line-height: 1.4; color: var(--muted); margin-top: 0.05rem; }
+.talk-title { font-size: 0.98rem; line-height: 1.4; }
+.talk-host { font-size: 0.87rem; line-height: 1.4; color: var(--muted); margin-top: 0.05rem; }
 .talk-host a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
 .talk-host a:hover { color: var(--fg); }
 .talks li { margin-bottom: 0.7rem; }
