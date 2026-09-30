@@ -1,0 +1,5 @@
+{{ define "main" }}
+<nav class="crumb"><a href="{{ site.Home.RelPermalink }}">← {{ site.Title }}</a></nav>
+<h1>{{ .Title }}</h1>
+{{ partial "post-list.html" .Pages.ByDate.Reverse }}
+{{ end }}

@@ -1,0 +1,16 @@
+baseURL = "https://ricardodominguez.github.io/"
+locale = "en-us"
+title = "Ricardo Olmedo"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+
+[params]
+  description = "PhD student at the Max Planck Institute for Intelligent Systems, working on language models and benchmarking."
+
+[outputs]
+  home = ["html"]
+  section = ["html", "rss"]
+
+# Lets a paragraph take a class, e.g. a table caption: `**Caption**` then `{.caption}` on the next line.
+[markup.goldmark.parser.attribute]
+  block = true

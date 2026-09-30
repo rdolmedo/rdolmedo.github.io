@@ -1,0 +1,8 @@
+<ul class="posts">
+  {{- range . }}
+  <li>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .RenderString .LinkTitle }}</a>
+  </li>
+  {{- end }}
+</ul>

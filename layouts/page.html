@@ -1,0 +1,19 @@
+{{ define "main" }}
+<nav class="crumb"><a href="{{ site.Home.RelPermalink }}">← {{ site.Title }}</a></nav>
+<article>
+  <header class="post-header">
+    <h1>{{ .RenderString .Title }}</h1>
+    <p class="meta">
+      {{- with .Params.author }}<span>{{ . }}</span>{{ end }}
+      {{- with .Params.affiliation }}<span>{{ . }}</span>{{ end }}
+      {{- if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end -}}
+    </p>
+    {{- with .Params.lede }}
+    <p class="lede">{{ $.RenderString . }}</p>
+    {{- end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

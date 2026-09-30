@@ -6,3 +6,8 @@
 
 # jekyll build files #
 _site/
+
+# hugo build output #
+public/
+resources/_gen/
+.hugo_build.lock

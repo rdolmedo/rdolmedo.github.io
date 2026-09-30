@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="intro">
+  <h1>{{ site.Title }}</h1>
+  {{- with .Params.links }}
+  <nav class="links">
+    {{- range . }}
+    <a href="{{ .url }}">{{ .name }}</a>
+    {{- end }}
+  </nav>
+  {{- end }}
+</header>
+
+<div class="prose">
+  {{ .Content }}
+</div>
+
+{{ with site.GetPage "/blogs" }}
+<section>
+  <h2>{{ .Title }}</h2>
+  {{ partial "post-list.html" .Pages.ByDate.Reverse }}
+</section>
+{{ end }}
+{{ end }}

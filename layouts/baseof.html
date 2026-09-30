@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="kind-{{ .Kind }}">
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+</body>
+</html>
