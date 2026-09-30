@@ -2,6 +2,7 @@
 # `selected: true` also lists the paper on the homepage.
 # `award` (e.g. Oral, Spotlight) is shown as a badge after the venue.
 # Your name is bolded automatically (see `authorNames` in hugo.toml).
+# "First author" filter: papers where you're listed first; add `firstAuthor: true` for equal contribution.
 
 - title: "nanoswe: Speedrunning SWE-bench"
   authors: Ricardo Olmedo, Moritz Hardt, Bernhard Schölkopf, Sanmi Koyejo

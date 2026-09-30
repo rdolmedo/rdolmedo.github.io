@@ -3,9 +3,28 @@
 <h1>{{ .Title }}</h1>
 <div class="prose muted">{{ .Content }}</div>
 
-<ul class="pubs pub-list">
+<div class="pub-filter" role="group" aria-label="Filter publications" hidden>
+  <button type="button" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-filter="first" aria-pressed="false">First author</button>
+</div>
+
+<ul class="pubs pub-list" id="pub-list">
   {{- range hugo.Data.publications }}
   {{ partial "pub.html" (dict "pub" . "authors" true) }}
   {{- end }}
 </ul>
+
+<script>
+  (() => {
+    const group = document.querySelector(".pub-filter");
+    const list = document.getElementById("pub-list");
+    group.hidden = false;
+    group.addEventListener("click", (e) => {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+      for (const b of group.querySelectorAll("button")) b.setAttribute("aria-pressed", b === btn);
+      list.classList.toggle("first-only", btn.dataset.filter === "first");
+    });
+  })();
+</script>
 {{ end }}

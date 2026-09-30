@@ -5,6 +5,7 @@
   --rule: #e6e6e2;
   --accent: #2c56c9;
   --code-bg: #f0f0ed;
+  --raised: #ffffff;
   --measure: 40rem;
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
@@ -18,6 +19,7 @@
     --rule: #2b2d31;
     --accent: #8eaeff;
     --code-bg: #1f2124;
+    --raised: #2c2e33;
   }
 }
 
@@ -93,9 +95,8 @@ a code { color: inherit; }
 
 .section-head {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  gap: 1rem;
+  gap: 0.9rem;
   margin: 3rem 0 1rem;
 }
 .section-head h2 { margin: 0; }
@@ -103,7 +104,38 @@ a code { color: inherit; }
 
 /* Publications, from data/publications.yaml */
 .pubs { list-style: none; padding: 0; margin: 0; }
-.pub-list { margin-top: 2.25rem; }
+.pub-list { margin-top: 2rem; }
+.pub-list.first-only .pub:not([data-first-author]) { display: none; }
+
+.pub-filter {
+  display: inline-flex;
+  gap: 2px;
+  margin-top: 1.25rem;
+  padding: 3px;
+  background: var(--code-bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+.pub-filter[hidden] { display: none; }
+.pub-filter button {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.3rem 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.pub-filter button:hover { color: var(--fg); }
+.pub-filter button[aria-pressed="true"] {
+  color: var(--fg);
+  background: var(--raised);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08), 0 0 0 1px var(--rule);
+}
+.pub-filter button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .pub-list .pub { margin-bottom: 1.4rem; }
 .pub { margin: 0 0 1rem; line-height: 1.45; }
 .pub .authors,

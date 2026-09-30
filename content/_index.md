@@ -9,8 +9,8 @@ links:
     url: mailto:rdo@tue.mpg.de
 ---
 
-I am a PhD student at the Max Planck Institute for Intelligent Systems, Tübingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schoelkopf](https://is.mpg.de/~bs). My PhD is supported by a Google PhD Fellowship (2025–2027).
+I am a PhD student at the Max Planck Institute for Intelligent Systems, Tübingen, working with [Moritz Hardt](https://mrtz.org/) and [Bernhard Schoelkopf](https://is.mpg.de/~bs).
 
 My research focuses broadly on LLM benchmarking & specialization.
 
-During spring/summer 2026, I visited [Sanmi Koyejo](https://stairlab.stanford.edu/) at Stanford University.
+During spring/summer 2026, I visited [Sanmi Koyejo](https://stairlab.stanford.edu/) at Stanford University. My PhD is supported by a Google PhD Fellowship (2025–2027).

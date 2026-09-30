@@ -1,6 +1,9 @@
 {{- /* One publication. Context: dict "pub" (entry from data/publications.yaml) "authors" (bool). */ -}}
 {{- $p := .pub -}}
-<li class="pub">
+{{- $first := false -}}
+{{- with $p.authors }}{{ $first = in site.Params.authorNames (index (split . ", ") 0) }}{{ end -}}
+{{- if $p.firstAuthor }}{{ $first = true }}{{ end -}}
+<li class="pub"{{ if $first }} data-first-author{{ end }}>
   <a href="{{ $p.url }}">{{ $p.title }}</a>
   {{- if and .authors $p.authors }}
   {{- $a := $p.authors | htmlEscape }}
