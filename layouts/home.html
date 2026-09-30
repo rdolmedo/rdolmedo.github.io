@@ -15,7 +15,10 @@
   {{- with .Params.links }}
   <nav class="links">
     {{- range . }}
-    <a href="{{ .url }}">{{ .name }}</a>
+    {{- $icon := "" }}{{ with .icon }}{{ with resources.Get (printf "icons/%s.svg" .) }}{{ $icon = .Content }}{{ end }}{{ end }}
+    <a href="{{ .url }}" title="{{ .name }}"{{ if $icon }} aria-label="{{ .name }}"{{ end }}>
+      {{- if $icon }}{{ $icon | safeHTML }}{{ else }}{{ .name }}{{ end -}}
+    </a>
     {{- end }}
   </nav>
   {{- end }}

@@ -91,9 +91,19 @@ a code { color: inherit; }
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
+  align-items: center;
+  gap: 0.5rem 1.1rem;
   font-size: 0.95rem;
 }
+.links a:has(svg) {
+  display: inline-flex;
+  padding: 0.15rem;
+  margin: -0.15rem;
+  border-radius: 6px;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.links a:has(svg):hover { opacity: 0.75; transform: translateY(-1px); }
+.links svg { width: 1.35rem; height: 1.35rem; color: var(--fg); }  /* brand icons set their own fill */
 
 .kind-home h2 {
   font-size: 0.78rem;

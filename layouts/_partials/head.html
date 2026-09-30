@@ -10,6 +10,7 @@
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="icon" href="{{ "favicon-32.png" | relURL }}" type="image/png" sizes="32x32">
+<link rel="icon" href="{{ "favicon-64.png" | relURL }}" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 {{- with resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">

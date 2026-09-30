@@ -11,7 +11,7 @@ hugo server -D     # also show drafts
 
 ## Where things are
 
-- Homepage bio and links: `content/_index.md`
+- Homepage bio, photo and links: `content/_index.md` (a link's `icon:` names an SVG in `assets/icons/`)
 - Publications (full list at /publications/; `selected: true` puts one on the homepage): `data/publications.yaml`
 - Talks (homepage shows the three newest): `data/talks.yaml`
 - Blog posts: `content/blogs/*.md`. Start a new one with `hugo new content blogs/my-post.md` (it begins as a draft; delete `draft: true` to publish).
