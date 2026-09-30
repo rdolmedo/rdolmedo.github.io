@@ -1,0 +1,17 @@
+# Newest first; the homepage shows the first three.
+# Optional: `slides` and `video` URLs are shown as links after the host.
+
+- title: "Speedrunning SWE-bench, or the $1,000 coding agent"
+  host: Confluence Workshop @ EPFL
+  hostURL: https://confluence2026.epfl.ch/
+  date: Oct 2026
+
+- title: Benchmarks and How They Drive Progress in AI
+  host: Machine Learning Summer School, Tübingen
+  hostURL: https://mlss2026.is.tuebingen.mpg.de/
+  date: Sep 2026
+
+- title: "Scaling, specialization, and the $60 SWE-bench model"
+  host: SALT & Talk, Stanford University
+  hostURL: https://saltlab.stanford.edu/talks/
+  date: Jul 2026

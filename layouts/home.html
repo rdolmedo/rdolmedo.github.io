@@ -37,4 +37,25 @@
   {{ partial "post-list.html" .Pages.ByDate.Reverse }}
 </section>
 {{ end }}
+
+{{ with first 3 hugo.Data.talks }}
+<section>
+  <h2>Recent talks</h2>
+  <ul class="posts talks">
+    {{- range . }}
+    <li>
+      <span class="date">{{ .date }}</span>
+      <div>
+        <span class="talk-title">{{ .title }}</span>
+        <span class="talk-host">
+          {{- $host := .host }}{{ with .hostURL }}<a href="{{ . }}">{{ $host }}</a>{{ else }}{{ $host }}{{ end -}}
+          {{- with .slides }} · <a href="{{ . }}">Slides</a>{{ end -}}
+          {{- with .video }} · <a href="{{ . }}">Video</a>{{ end -}}
+        </span>
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}
 {{ end }}

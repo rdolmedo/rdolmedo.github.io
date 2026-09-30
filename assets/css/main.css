@@ -174,12 +174,20 @@ a code { color: inherit; }
   margin: 0 0 0.7rem;
   line-height: 1.45;
 }
-.posts time {
+.posts time,
+.posts .date {
   flex: 0 0 4.75rem;
   font-size: 0.88rem;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
+
+.talk-title,
+.talk-host { display: block; }
+.talk-host { font-size: 0.9rem; color: var(--muted); margin-top: 0.1rem; }
+.talk-host a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+.talk-host a:hover { color: var(--fg); }
+.talks li { margin-bottom: 0.95rem; }
 
 .ext { font-size: 0.8em; margin-left: 0.2em; color: var(--muted); }
 
