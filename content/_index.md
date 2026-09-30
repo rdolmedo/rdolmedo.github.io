@@ -1,6 +1,7 @@
 ---
 title: Ricardo Olmedo
 aka: Also published as Ricardo Dominguez-Olmedo
+photo: images/photo.png  # in assets/; also used as the link-preview image
 links:
   - name: Google Scholar
     url: https://scholar.google.com/citations?user=wAaJqPYAAAAJ&hl=en

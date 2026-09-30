@@ -22,3 +22,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta name="twitter:card" content="summary">
+{{- with site.Home.Params.photo }}{{ with resources.Get . }}
+{{- $og := . }}{{ if ge .Width 400 }}{{ $og = .Fill "400x400 Smart jpg q85" }}{{ end }}
+<meta property="og:image" content="{{ $og.Permalink }}">
+{{- end }}{{ end }}

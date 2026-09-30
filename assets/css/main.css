@@ -77,7 +77,16 @@ a code { color: inherit; }
 
 .intro { margin-bottom: 2rem; }
 .intro h1 { margin-bottom: 0; }
-.aka { margin: 0.1rem 0 0.75rem; font-size: 0.85rem; color: var(--muted); }
+.intro-top { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
+.avatar {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+.aka { margin: 0.1rem 0 0; font-size: 0.85rem; color: var(--muted); }
 
 .links {
   display: flex;
@@ -172,6 +181,7 @@ a code { color: inherit; }
   gap: 1.25rem;
   align-items: baseline;
   margin: 0 0 0.7rem;
+  font-size: 0.98rem;
   line-height: 1.45;
 }
 .posts time,
