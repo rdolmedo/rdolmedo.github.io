@@ -8,7 +8,7 @@ links:
     url: https://scholar.google.com/citations?user=wAaJqPYAAAAJ&hl=en
   - name: GitHub
     icon: github
-    url: https://github.com/RicardoDominguez
+    url: https://github.com/rdolmedo
   - name: Hugging Face
     icon: huggingface
     url: https://huggingface.co/ricdomolm
