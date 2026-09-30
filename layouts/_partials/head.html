@@ -8,7 +8,11 @@
 <meta name="color-scheme" content="light dark">
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
+{{- if eq .Kind "404" }}
+<meta name="robots" content="noindex">
+{{- else }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{- end }}
 <link rel="icon" href="{{ "favicon-32.png" | relURL }}" type="image/png" sizes="32x32">
 <link rel="icon" href="{{ "favicon-64.png" | relURL }}" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">

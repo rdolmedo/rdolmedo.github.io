@@ -1,0 +1,9 @@
+{{ define "main" }}
+<nav class="crumb"><a href="{{ site.Home.RelPermalink }}">← {{ site.Title }}</a></nav>
+<h1>Page not found</h1>
+<p class="muted">
+  This page doesn't exist or has moved. Try the <a href="{{ site.Home.RelPermalink }}">homepage</a>
+  {{- with site.GetPage "/publications" }}, the <a href="{{ .RelPermalink }}">publications</a>{{ end }}
+  {{- with site.GetPage "/blogs" }}, or the <a href="{{ .RelPermalink }}">blog posts</a>{{ end }}.
+</p>
+{{ end }}
